@@ -1,0 +1,29 @@
+#the-element {
+	position: absolute;
+}
+
+#the-element table {
+	background-color: #f6f6f6;
+	border: 1px solid #dedede;
+	border-collapse: collapse;
+	cursor: default;
+	font-family: 'Myriad Pro', helvetica, sans-serif;
+	font-size: 13px;
+	box-shadow: 0px 8px 10px 0px rgba(0,0,0,.25);
+	width: 250px;
+}
+#the-element th, #the-element td {
+	padding: 3px;
+	border: 1px solid #dedede;
+	width: 33%;
+}
+#the-element .scrollbar {
+	position: absolute;
+	right: -10px;
+	top: 23px;
+	width: 10px;
+	height: 100px;
+	background: #aaa;
+	border-radius: 0px 3px 3px 0px;
+	box-shadow: inset 3px 0px 3px -2px rgba(0,0,0,.3);
+}
