@@ -120,24 +120,35 @@
 			// Stylesheet
 			addStyles({
 				'#the-element': {
-					'position': 'absolute',
+					'position': 'fixed',
 					'right': '15px',
-					'top': '15px'
+					'top': '15px',
+					'z-index': '99999'
 				},
 				'#the-element table': {
 					'background-color': '#f6f6f6',
-					'border': '1px solid #dedede',
-					'border-collapse': 'collapse',
+					'border': '1px solid white',
+					'border-right': '1px solid #dadada',
+					'border-bottom': '1px solid #bbb',
+					'border-spacing': '0px',
 					'cursor': 'default',
 					'font-family': "'Myriad Pro', helvetica, sans-serif",
 					'font-size': '13px',
-					'box-shadow': '0px 8px 10px 0px rgba(0,0,0,.25)',
+					'box-shadow': '0px 8px 30px 0px rgba(0,0,0,.2)',
 					'width': '250px'
 				},
 				'#the-element th, #the-element td': {
 					'padding': '3px',
-					'border': '1px solid #dedede',
 					'width': '33%'
+				},
+				'#the-element td': {
+					'border': '1px solid #dedede',
+					'border-right': '1px solid  white',
+					'border-bottom': '1px solid white'
+				},
+				'#the-element th': {
+					'padding': '5px',
+					'background': '#f9f9f9'
 				},
 				'#the-element .scrollbar': {
 					'position': 'absolute',
