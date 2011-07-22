@@ -225,15 +225,16 @@
 			var end = begin+rows;
 			
 			var dataSubSet = model.data.slice(begin, end);
+			var tbody = view.theElement.find('tbody');
 			
-			view.theElement.find('tbody').empty();
+			tbody.empty();
 			for (var i=dataSubSet.length-1; i>=0; --i)
 			{
-				view.theElement.find('tbody').append("<tr><td>"+dataSubSet[i].bids+"</td><td>"+dataSubSet[i].price+"</td><td>"+dataSubSet[i].asks+"</td></tr>");
+				tbody.append("<tr><td>"+dataSubSet[i].bids+"</td><td>"+dataSubSet[i].price+"</td><td>"+dataSubSet[i].asks+"</td></tr>");
 			}
 			
 			// Scrollbar
-			var bodyHeight = view.theElement.find('tbody').height();
+			var bodyHeight = tbody.height();
 			
 			view.scrollbar.css({
 				top: view.theElement.find('thead').height() + ((bodyHeight - view.scrollbar.height()) * view.scroll),
