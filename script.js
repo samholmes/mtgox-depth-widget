@@ -73,7 +73,7 @@
 			this.addAsk(price, -amount);
 		},
 		clear: function() {
-			data = [];
+			this.data = [];
 		},
 		replaceWithDepthData: function(data) {
 			var asks = data.asks,
